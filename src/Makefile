@@ -1,7 +1,7 @@
 include $(ROOT)/config.$(OSTYPE).mk
 
 OBJS=$(patsubst %.c,%.o,$(wildcard *.c))
-MAIN_OBJS = main.o pthread_pool.o
+MAIN_OBJS = main.o thread_pool.o
 
 all:$(BINARYDIR)/main $(MAIN_OBJS)
 $(BINARYDIR)/main:$(MAIN_OBJS)
